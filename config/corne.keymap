@@ -15,6 +15,7 @@
 / {
     behaviors {
         // Shift no X (mao esquerda): so segura se a proxima tecla for da mao DIREITA
+
         lsft: left_shift_positional {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -23,11 +24,13 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
             hold-trigger-on-release;
         };
 
         // Shift no . (mao direita): so segura se a proxima tecla for da mao ESQUERDA
+
         rsft: right_shift_positional {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -36,6 +39,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
             hold-trigger-on-release;
         };
@@ -54,10 +58,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q  &kp W             &kp E          &kp R        &kp T               &kp Y               &kp U         &kp I          &kp O                &kp P      &trans
-&trans  &kp A  &kp S             &kp D          &kp F        &kp G               &kp H               &kp J         &kp K          &kp L                &kp SEMI   &trans
-&trans  &kp Z  &lsft LEFT_SHIFT X  &kp C          &kp V        &kp B               &kp N               &kp M         &kp COMMA      &rsft RIGHT_SHIFT DOT  &kp SLASH  &trans
-                                 &mt LCTRL TAB  &lt 1 SPACE  &mt LEFT_WIN ESC    &mt LEFT_ALT ENTER  &lt 2 DELETE  &kp BACKSPACE
+&trans  &kp Q               &kp W  &kp E          &kp R        &kp T               &kp Y               &kp U         &kp I          &kp O    &kp P                    &trans
+&trans  &kp A               &kp S  &kp D          &kp F        &kp G               &kp H               &kp J         &kp K          &kp L    &kp SEMI                 &trans
+&trans  &lsft LEFT_SHIFT Z  &kp X  &kp C          &kp V        &kp B               &kp N               &kp M         &kp COMMA      &kp DOT  &rsft RIGHT_SHIFT SLASH  &trans
+                                   &mt LCTRL TAB  &lt 1 SPACE  &mt LEFT_WIN ESC    &mt LEFT_ALT ENTER  &lt 2 DELETE  &kp BACKSPACE
             >;
         };
 
