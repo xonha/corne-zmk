@@ -69,7 +69,7 @@
             bindings = <
 &trans  &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp PLUS            &kp LS(BACKSLASH)      &kp RIGHT_PARENTHESIS  &kp BACKSLASH      &kp LS(LEFT_BRACKET)  &kp LEFT_BRACKET  &trans
 &trans  &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &mt COMMA PERIOD    &kp LS(RIGHT_BRACKET)  &kp LEFT_PARENTHESIS   &kp RIGHT_BRACKET  &kp LS(APOSTROPHE)    &kp APOSTROPHE    &trans
-&trans  &kp RA(Q)     &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp MINUS           &mkp MB1               &mkp MB2               &kp CAPSLOCK       &kp GRAVE             &kp LS(GRAVE)     &trans
+&trans  &kp RA(Q)     &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp MINUS           &kp CAPSLOCK           &mkp MB1               &mkp MB2           &kp GRAVE             &kp LS(GRAVE)     &trans
                                     &kp BACKSPACE  &trans        &kp ENTER           &trans                 &mo 3                  &trans
             >;
         };
